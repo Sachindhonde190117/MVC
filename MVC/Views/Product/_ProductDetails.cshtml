@@ -1,0 +1,39 @@
+﻿@model MVC.Models.ProductModel
+
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td colspan="2" valign="top"><b>@Html.DisplayNameFor(model => model.ProductID):</b></td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>@Html.DisplayFor(model => model.Name)</td>
+    </tr>
+    <tr>
+        <td>Category</td>
+        <td>  @Html.DisplayFor(model => model.Category)</td>
+    </tr>
+    <tr>
+        <td>Description</td>
+        <td>  @Html.DisplayFor(model => model.Description)</td>
+    </tr>
+    <tr>
+        <td>Price</td>
+        <td> @Html.DisplayFor(model => model.Price)</td>
+    </tr>
+</table>
+
+
+@*<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td valign="top"><b>@Html.DisplayNameFor(model => model.ProductID):</b></td>
+        <td>
+            @Html.DisplayFor(model => model.Name)
+            <br />
+            @Html.DisplayFor(model => model.Category),
+            @Html.DisplayFor(model => model.Description)
+            <br />
+            @Html.DisplayFor(model => model.Price)
+        </td>
+    </tr>
+</table>*@

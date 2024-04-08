@@ -1,0 +1,15 @@
+﻿@model MVC.Models.StudentModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+Standard Text  @Html.TextBox("Name")
+
+
+Html Type View<input id="LastName" name="LastName" type="text" value="">
+
+
+Strongly Type View @Html.TextBoxFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+
