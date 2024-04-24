@@ -120,12 +120,17 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ActionSelectorsController.cs" />
+    <Compile Include="Controllers\DatapassingController.cs" />
+    <Compile Include="Controllers\DataPostController.cs" />
+    <Compile Include="Controllers\HelpersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CustomHelper.cs" />
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Models\StudentModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -156,6 +161,12 @@
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Invoice\Invoice %281%29.pdf" />
+    <Content Include="Invoice\Invoice %282%29.pdf" />
+    <Content Include="Invoice\Invoice %283%29.pdf" />
+    <Content Include="Invoice\Invoice %284%29.pdf" />
+    <Content Include="Invoice\Invoice %285%29.pdf" />
+    <Content Include="Invoice\Invoice.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -188,6 +199,14 @@
     <Content Include="Views\Shared\_ProductList.cshtml" />
     <Content Include="Views\Product\ProductList.cshtml" />
     <Content Include="Views\Product\_ProductDetails.cshtml" />
+    <Content Include="Views\Student\Myview.cshtml" />
+    <Content Include="Views\Helpers\Index.cshtml" />
+    <Content Include="Views\ActionSelectors\Index.cshtml" />
+    <Content Include="Views\ActionSelectors\User.cshtml" />
+    <Content Include="Views\Datapassing\Index.cshtml" />
+    <Content Include="Views\DataPost\Paramatarize.cshtml" />
+    <Content Include="Views\DataPost\FormPost.cshtml" />
+    <Content Include="Views\DataPost\JqueryPost_Param.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

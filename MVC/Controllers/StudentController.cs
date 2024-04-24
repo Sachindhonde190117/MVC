@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVC.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,12 +12,43 @@ namespace MVC.Controllers
         // GET: Student
         public ActionResult Index()
         {
-            return View();
+            StudentModel model = new StudentModel()
+            {
+                Name="Suresh More",
+                Description="Hello Suresh",
+                Email="Suresh@gamil.com",
+                FirstName="Suresh",
+                Id=1,
+                LastName="more",
+                Hobbies= new List<string>()
+                {
+                    "Cricket",
+                    "Football",
+                    "Khokho"
+                }
+            };
+         
+            return View(model);
+        }
+        [HttpPost]
+        public ActionResult Index(StudentModel model) 
+        {
+        
+            return View(model);
         }
 
+        public ActionResult Myview()
+        {
+            return RedirectToRoute("HelloSagar");
+
+        }
+        public ActionResult Myview1()
+        {
+            return Content("Hi............");
+        }
         public ActionResult Post()
         {
-            return View();
+            return Redirect("Index");
         }
     }
 }

@@ -8,6 +8,7 @@
 <div>
     @Html.Partial("_ProductList", Model);
 </div>
+<button type="button" id="Test" class="Test" data-dismiss="modal">Test</button>
 
 <<div id="partialModal" class="modal" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
@@ -21,7 +22,7 @@
             <div class="modal-body">
             </div>
             <div class="modal-footer">
-                <button type="button" id="close" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" id="close" class="close" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -35,10 +36,10 @@
             var productId = $(this).closest("tr").find("td").eq(0).html();
             $.ajax({
                 type: "POST",
-                url: "/Product/Details", 
+                url: "/Product/DetailsByID",
                 data: { "productId": productId },
                 success: function (response) {
-                    $("#partialModal").find(".modal-body").html(response);
+                    debugger;
                     $("#partialModal").modal('show');
                 },
                 failure: function (response) {
@@ -49,8 +50,27 @@
                 }
             });
         });
+
         $("#close").click(function () {
+            debugger;
             $("#partialModal").modal('hide');
         });
+
+        $("#Test").on("click", function (event) {
+            debugger;
+            alert("Hi..");
+        });
+
+        $(".Test").on("click", function (event) {
+            debugger;
+            alert("Hi..");
+        });
+
+
     });
+
+    //$("#button-container button").on("click", function (event) {
+    //    hiddenBox.show();
+    //});
 </script>
+

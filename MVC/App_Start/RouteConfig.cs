@@ -12,12 +12,25 @@ namespace MVC
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            routes.MapMvcAttributeRoutes();
-         //   routes.MapRoute(
-         //name: "Contact",
-         //url: "Sagar",
-         //defaults: new { controller = "Home", action = "Contact", id = UrlParameter.Optional }
-         //);
+            routes.MapMvcAttributeRoutes(); //Enabling attribute routing
+
+           
+
+            routes.MapRoute(
+            name: "HiSagar",
+             url: "Sagar",
+             defaults: new { controller = "Home", action = "Contact", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+            name: "HelloSagar",
+             url: "Sagar/{ID}",
+             defaults: new { controller = "Home", action = "Contact", id = UrlParameter.Optional }
+
+            );
+
+
+
 
             routes.MapRoute(
                 name: "Default",

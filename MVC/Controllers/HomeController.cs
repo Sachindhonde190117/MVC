@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace MVC.Controllers
 {
-    [RoutePrefix("myhome")]
+    [RoutePrefix("MyPage")]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -29,12 +29,12 @@ namespace MVC.Controllers
 
             return View();
         }
-
+        [Route("Message")]
         public string GetMessage1()
         {
             return "GetMessage1 " + GetContact();
         }
-
+        [Route("Message1")]
         public string GetMessage()
         {
             return "GetMessage " +  GetContact();
