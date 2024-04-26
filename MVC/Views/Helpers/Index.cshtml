@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>HTML Helpers Control</h2>
+
+<h3>Extension Method (HTML)</h3>
+
+<h4>Html ActionLink</h4>
+
+
+@Html.ActionLink("Helpers", "Post")
+<br />
+@Html.ActionLink("Helpers", "Post", new { id = 1 })
+<br />
+@Html.ActionLink("Helpers", "Post", new { id = 1 })
+<br />
+@Html.ActionLink("ProductList", "Index", "Product")
+<br /> @*redirection on antoher actinn method of controlller*@
+@Html.ActionLink("What is this", "Post", "Helpers", new { id = 1 }, new { @class = "dropdown-toggle", data_toggle = "dropdown" })
+<br />
+
+@ViewBag.Message
+
+
+<h4>Html TextBox</h4>
+@Html.TextBox("textbox1")
+@Html.TextBox("textbox1", "Hello")
+@Html.TextBox("textbox1", "Hello", new { Style = "background:#cccccc;color:red" })
+@Html.TextBox("textbox1", "Hello", new { @class = "red" })
+
+<style>
+    .red {
+        background-color: blue
+    }
+
+    .dropdown-toggle {
+        color: black
+    }
+
+    .dropdown {
+        color: red
+    }
+
+    .areaWidth {
+        width: 500px;
+    }
+</style>
+<br />
+<br />
+
+<h4>Html TextArea</h4>
+@Html.TextArea("TextArea1", new { @rows = 8, @class = "areaWidth" })
+<br />
+@Html.TextArea("TextArea1", "Hello", 10, 5, new { @class = "areaWidth" })
+
+
+@MVC.CustomHelper.CreateImage("", "")
+
+
+@Html.HelloWorldString()
+
+@Html.Alert("Invlid Details")

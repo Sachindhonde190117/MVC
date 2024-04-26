@@ -1,0 +1,66 @@
+﻿@model IEnumerable<MVC.Models.ProductModel>
+@{
+    ViewBag.Title = "JqueryPost_modellist";
+}
+
+<h2>JqueryPost_modellist</h2>
+
+
+<div>
+    @Html.Partial("_ProductList", Model)
+</div>
+<div>
+    <input type="button" class="btn btn-default" id="btnSavelist" value="Save with List" />
+</div>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script>
+    //for (var i = 0; i < alphaArray.length; i++) {
+    //    var address = {}
+    //    address.street = i;
+    //    address.city = i;
+    //    addressArray.push(address);
+    //}
+    $(document).ready(function () {
+
+        $("#btnSavelist").click(function () {
+            debugger;
+
+
+            //Build List object that has to be sent to controller  
+            var ProductList = []; // list object  
+            $('#CustomerGrid > tbody  > tr:not(:first)').each(function () { //loop in table list  
+                debugger;
+                var row = $(this);
+                var product = {}; // create new product object and set its properties  
+                product.ProductID = this.cells[0].innerHTML.replace(/ /g, '').trim();
+                product.Name = this.cells[1].innerHTML.replace(/ /g, '').trim();
+                product.Category = this.cells[2].innerHTML.replace(/ /g, '').trim();
+                product.Description = this.cells[3].innerHTML.replace(/ /g, '').trim();
+                product.Price = row.find("td").eq(4).find('input[type=text]').val();
+                ProductList.push(product); // add product object to list object  
+            });
+            console.log(JSON.stringify(ProductList));
+            //Send list of product to controller via ajax  
+            $.ajax({
+                url: '/DataPost/JqueryPostllist',
+                type: "POST",
+                data: JSON.stringify(ProductList),
+                contentType: "application/json",
+                dataType: "json",
+                success: function (response) {
+                    // Process response from controller  
+                    if (response === 1) {
+                        alert("product have been saved successfully."); // show success notification  
+                         
+                    } else {
+                        alert("Ooops, an error has ocurrer while processing the transaction.");
+                    }
+                }
+            }); 
+
+          
+        });
+
+    });
+</script>

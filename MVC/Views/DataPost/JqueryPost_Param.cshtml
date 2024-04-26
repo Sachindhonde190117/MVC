@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "JqueryPost_Param";
+}
+
+<h2>JqueryPost_Param</h2>
+<div class="form-group">
+    <label for="issuerKey">Name</label>
+    @Html.TextBox("Name", "", new { htmlAttributes = new { @class = "form-control" } })<br /><br />
+    <label for="issuerKey">LastName</label>
+    @Html.TextBox("LastName", "", new { htmlAttributes = new { @class = "form-control" } })<br /><br />
+    <label for="issuerKey">FirstName</label>
+    @Html.TextBox("FirstName", "", new { htmlAttributes = new { @class = "form-control" } })<br /><br />
+    <label for="issuerKey">Email</label>
+    @Html.TextBox("Email", "", new { htmlAttributes = new { @class = "form -control" } })<br /><br />
+    <label for="issuerKey">Description</label>
+    @Html.TextBox("Description", "", new { htmlAttributes = new { @class = "form-control" } })<br /><br />
+    <label for="issuerKey">Hobbie</label>
+    @Html.DropDownList("Hobbie", new SelectList(ViewBag.Hobbies), new { htmlAttributes = new { @class = "form-control" } })<br /><br />
+    <input type="button" class="btn btn-default" id="btnSave" value="Save" />
+</div>
+
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#btnSave").click(function () {
+            console.log($("#Name").val());
+            $.ajax({
+                type: "Post",
+                url: "@Url.Action("JqueryPost_Param", "DataPost")",
+                data: { Name: $("#Name").val(), LastName: $("#LastName").val(), FirstName: $("#FirstName").val(), Email: $("#Email").val(), Description: $("#Description").val(), Hobbie: $("#Hobbie").val() },
+                success: function (response) {
+                    if (parseInt(response) > 0) {
+                        alert("success");
+                    }
+                    else {
+                        alert("Fail");
+                    }
+                },
+                error: function (error) {
+                    alert(error);
+                }
+            });
+        });
+    });
+</script>

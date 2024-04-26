@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "JqueryPost_model";
+}
+
+<h2>JqueryPost_model</h2>
+
+<div class="form-group">
+    <label for="issuerKey">Name</label>
+    @Html.TextBox("Name", "", new { htmlAttributes = new { @class = "form-control" } })<br /><br />
+    <label for="issuerKey">LastName</label>
+    @Html.TextBox("LastName", "", new { htmlAttributes = new { @class = "form-control" } })<br /><br />
+    <label for="issuerKey">FirstName</label>
+    @Html.TextBox("FirstName", "", new { htmlAttributes = new { @class = "form-control" } })<br /><br />
+    <label for="issuerKey">Email</label>
+    @Html.TextBox("Email", "", new { htmlAttributes = new { @class = "form -control" } })<br /><br />
+    <label for="issuerKey">Description</label>
+    @Html.TextBox("Description", "", new { htmlAttributes = new { @class = "form-control" } })<br /><br />
+    <label for="issuerKey">Hobbie</label>
+    @Html.DropDownList("Hobbie", new SelectList(ViewBag.Hobbies), new { htmlAttributes = new { @class = "form-control" } })<br /><br />
+    <input type="button" class="btn btn-default" id="btnSave" value="Save with Model" />
+    <input type="button" class="btn btn-default" id="btnSavelist" value="Save with List" />
+</div>
+
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script>
+    //for (var i = 0; i < alphaArray.length; i++) {
+    //    var address = {}
+    //    address.street = i;
+    //    address.city = i;
+    //    addressArray.push(address);
+    //}
+    $(document).ready(function () {
+
+        $("#btnSave").click(function () {
+            debugger;
+            var model = new FormData;
+            model.Name = $("#Name").val();
+            model.LastName = $("#LastName").val();
+            model.FirstName = $("#FirstName").val();
+            model.Email = $("#Email").val();
+            model.Description = $("#Description").val();
+            model.Hobbie = $("#Hobbie").val();
+            model.subject = { Name: "Amazing World", Id: 1 };
+            var alphaArray = ['A', 'B', 'C', 'D', 'E'];
+            model.Hobbies = alphaArray;
+
+            $.ajax({
+                type: "Post",
+                url: "@Url.Action("JqueryPost_model", "DataPost")",
+                data: JSON.stringify(model),
+                contentType: "application/json; charset=utf-8",
+                success: function (response) {
+                    if (parseInt(response) > 0) {
+                        alert("success");
+                    }
+                    else {
+                        alert("Fail");
+                    }
+                },
+                error: function (error) {
+                    alert(error);
+                }
+            });
+        });
+
+    });
+</script>
