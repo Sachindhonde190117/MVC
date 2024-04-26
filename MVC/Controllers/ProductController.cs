@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -36,7 +37,24 @@ namespace MVC.Controllers
         [NonAction]
         public List<ProductModel> Getall()  //non action method Private
         {
-            ProductModels = new List<ProductModel>()
+            //1 model 2. List<ProductModel> object// 
+            // datatable
+            DataTable dt = new DataTable();// method retuns datatable with data from db
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                ProductModel model= new ProductModel
+                {
+                    ProductID = 1,
+                    Name = "ProductModel 1",
+                    Category = "Category 1",
+                    Description = "Description 1",
+                    Price = 10m,
+                    FileName = "Invoice (1).pdf"
+                };
+                ProductModels.Add(model);
+            }
+
+            ProductModels = new List<ProductModel>() //2
             {
                 new ProductModel { ProductID =1, Name ="ProductModel 1", Category = "Category 1", Description ="Description 1", Price = 10m, FileName="Invoice (1).pdf" },
                 new ProductModel { ProductID =2, Name ="ProductModel 2", Category = "Category 1", Description ="Description 2", Price = 20m, FileName="Invoice (2).pdf"},

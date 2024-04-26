@@ -207,6 +207,9 @@
     <Content Include="Views\DataPost\Paramatarize.cshtml" />
     <Content Include="Views\DataPost\FormPost.cshtml" />
     <Content Include="Views\DataPost\JqueryPost_Param.cshtml" />
+    <Content Include="Views\DataPost\JqueryPost_model.cshtml" />
+    <Content Include="Views\DataPost\JqueryPost_modellist.cshtml" />
+    <Content Include="Views\DataPost\JqueryFormSubmit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
