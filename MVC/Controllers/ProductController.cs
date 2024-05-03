@@ -14,6 +14,9 @@ namespace MVC.Controllers
         // GET: ProductModel
         public ActionResult Index()
         {
+            TempData["MyTemp"] = "Hi....";
+            TempData.Keep(); // All temp data values stores
+            TempData.Peek("MyTemp"); // single values store 
             return View(Getall());
         }
 
