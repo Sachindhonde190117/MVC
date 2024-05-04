@@ -210,6 +210,8 @@
     <Content Include="Views\DataPost\JqueryPost_model.cshtml" />
     <Content Include="Views\DataPost\JqueryPost_modellist.cshtml" />
     <Content Include="Views\DataPost\JqueryFormSubmit.cshtml" />
+    <Content Include="Views\Datapassing\Index1.cshtml" />
+    <Content Include="Views\Datapassing\Index2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

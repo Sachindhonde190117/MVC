@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Timesheets\\MVC\\MVC\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E60A0648-B89D-4678-9D81-751394FB04F6}|MVC\\MVC.csproj|c:\\timesheets\\mvc\\mvc\\mvc\\views\\datapassing\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E60A0648-B89D-4678-9D81-751394FB04F6}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\datapassing\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E60A0648-B89D-4678-9D81-751394FB04F6}|MVC\\MVC.csproj|c:\\timesheets\\mvc\\mvc\\mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E60A0648-B89D-4678-9D81-751394FB04F6}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E60A0648-B89D-4678-9D81-751394FB04F6}|MVC\\MVC.csproj|c:\\timesheets\\mvc\\mvc\\mvc\\controllers\\datapassingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E60A0648-B89D-4678-9D81-751394FB04F6}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\datapassingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E60A0648-B89D-4678-9D81-751394FB04F6}|MVC\\MVC.csproj|c:\\timesheets\\mvc\\mvc\\mvc\\views\\datapassing\\index2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E60A0648-B89D-4678-9D81-751394FB04F6}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\datapassing\\index2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E60A0648-B89D-4678-9D81-751394FB04F6}|MVC\\MVC.csproj|c:\\timesheets\\mvc\\mvc\\mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E60A0648-B89D-4678-9D81-751394FB04F6}|MVC\\MVC.csproj|solutionrelative:mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E60A0648-B89D-4678-9D81-751394FB04F6}|MVC\\MVC.csproj|c:\\timesheets\\mvc\\mvc\\mvc\\views\\datapassing\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E60A0648-B89D-4678-9D81-751394FB04F6}|MVC\\MVC.csproj|solutionrelative:mvc\\views\\datapassing\\index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,12 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -22,6 +43,84 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Timesheets\\MVC\\MVC\\MVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Timesheets\\MVC\\MVC\\MVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-04T02:12:32.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Timesheets\\MVC\\MVC\\MVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Timesheets\\MVC\\MVC\\MVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MVC\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T01:37:45.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index2.cshtml",
+              "DocumentMoniker": "C:\\Timesheets\\MVC\\MVC\\MVC\\Views\\Datapassing\\Index2.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Datapassing\\Index2.cshtml",
+              "ToolTip": "C:\\Timesheets\\MVC\\MVC\\MVC\\Views\\Datapassing\\Index2.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Datapassing\\Index2.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-04T01:52:47.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index1.cshtml",
+              "DocumentMoniker": "C:\\Timesheets\\MVC\\MVC\\MVC\\Views\\Datapassing\\Index1.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Datapassing\\Index1.cshtml",
+              "ToolTip": "C:\\Timesheets\\MVC\\MVC\\MVC\\Views\\Datapassing\\Index1.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Datapassing\\Index1.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-04T01:45:23.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Timesheets\\MVC\\MVC\\MVC\\Views\\Datapassing\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC\\Views\\Datapassing\\Index.cshtml",
+              "ToolTip": "C:\\Timesheets\\MVC\\MVC\\MVC\\Views\\Datapassing\\Index.cshtml",
+              "RelativeToolTip": "MVC\\Views\\Datapassing\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-04T01:36:42.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DatapassingController.cs",
+              "DocumentMoniker": "C:\\Timesheets\\MVC\\MVC\\MVC\\Controllers\\DatapassingController.cs",
+              "RelativeDocumentMoniker": "MVC\\Controllers\\DatapassingController.cs",
+              "ToolTip": "C:\\Timesheets\\MVC\\MVC\\MVC\\Controllers\\DatapassingController.cs",
+              "RelativeToolTip": "MVC\\Controllers\\DatapassingController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAADwvzEAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-04T01:35:20.35Z",
+              "EditorCaption": ""
             }
           ]
         }

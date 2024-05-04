@@ -31,7 +31,32 @@ namespace MVC.Controllers
             int value = dictionary["Sagar"];
             ViewData["Hello"] = "Hello GM";
             ViewData["RollNO"] = list;
+
+            TempData["Name"] = "My Name is Sagar";
+            TempData.Peek("Name");
+            Session["petname"] = "110";
+            return View();
+
+        }
+        public ActionResult Index1()
+        {
+            if (TempData.ContainsKey("Name"))
+            {
+                string Data = TempData.Peek("Name").ToString();
+            }
+            string petname= Session["petname"].ToString();
+            TempData.Keep();
             return View();
         }
+
+        public ActionResult Index2()
+        {
+            string Data = TempData.Peek("Name").ToString();
+            TempData.Keep();
+            return View();
+        }
+
+
+
     }
 }

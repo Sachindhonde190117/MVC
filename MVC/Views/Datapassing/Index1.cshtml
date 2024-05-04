@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index1";
+}
+
+<h2>Index1</h2>
+
+
+<br />
+<br />
+@{
+    string msg = TempData.Peek("Name").ToString();
+    TempData.Peek("Name");
+
+}
+@msg
+@{ 
+TempData["Name"]= "My Name is Sagar more";
+                 }
+
+    @Html.ActionLink("Index2", "Index2")
