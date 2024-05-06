@@ -212,6 +212,7 @@
     <Content Include="Views\DataPost\JqueryFormSubmit.cshtml" />
     <Content Include="Views\Datapassing\Index1.cshtml" />
     <Content Include="Views\Datapassing\Index2.cshtml" />
+    <Content Include="Views\DataPost\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

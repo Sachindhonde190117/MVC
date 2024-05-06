@@ -19,11 +19,32 @@ namespace MVC.Controllers
         // GET: DataPost
         public ActionResult Index()
         {
+            List<string> Hobbies = new List<string>();
+            Hobbies.Add("Cricket");
+            Hobbies.Add("Football");
+            Hobbies.Add("Khokho");
+            ViewBag.Hobbs = Hobbies;
             return View();
         }
         [HttpPost]
         public ActionResult Index(StudentModel model)
         {
+            List<string> Hobbies = new List<string>();
+            Hobbies.Add("Cricket");
+            Hobbies.Add("Football");
+            Hobbies.Add("Khokho");
+            ViewBag.Hobbs = Hobbies;
+            if (ModelState.IsValid)
+            {
+                return View();
+            }
+            else
+            {
+                ViewBag.Message = string.Join("; ", ModelState.Values
+                                        .SelectMany(x => x.Errors)
+                                        .Select(x => x.ErrorMessage));
+                return View();
+            }
             int result= AddDetails(model);
             return View(model);
         }

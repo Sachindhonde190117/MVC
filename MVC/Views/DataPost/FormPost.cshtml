@@ -1,4 +1,4 @@
-﻿
+﻿@model MVC.Models.StudentModel
 @{
     ViewBag.Title = "FormPost";
 }
@@ -9,9 +9,9 @@
 
     <div class="form-group">
         <label for="issuerKey">Name</label>
-        @Html.TextBox("Name", "", new { htmlAttributes = new { @class = "form-control" } })<br /><br />
+        @Html.TextBoxFor(model=> model.Name, "", new { htmlAttributes = new { @class = "form-control" } })<br /><br />
         <label for="issuerKey">LastName</label>
-        @Html.TextBox("LastName", "", new { htmlAttributes = new { @class = "form-control" } })<br /><br />
+        @Html.TextBoxFor(model => model.LastName, "", new { htmlAttributes = new { @class = "form-control" } })<br /><br />
         <label for="issuerKey">FirstName</label>
         @Html.TextBox("FirstName", "", new { htmlAttributes = new { @class = "form-control" } })<br /><br />
         <label for="issuerKey">Email</label>
